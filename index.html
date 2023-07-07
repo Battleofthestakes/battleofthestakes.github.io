@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Battle of the Stakes</title>
+    <style>
+        /* Стилизация заголовка */
+        h1 {
+            font-size: 64px;
+            color: #ffcc00;
+            text-align: center;
+            margin-top: 100px;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+            animation: neon-glow 1.5s ease-in-out infinite alternate;
+        }
+
+        /* Анимация для заголовка */
+        @keyframes neon-glow {
+            from {
+                text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+            }
+            to {
+                text-shadow: 4px 4px 8px rgba(0, 0, 0, 0.8);
+            }
+        }
+
+        /* Стилизация описания */
+        p {
+            font-size: 24px;
+            color: #ffffff;
+            text-align: center;
+            margin-top: 50px;
+        }
+
+        /* Стилизация кнопок */
+        .button {
+            display: inline-block;
+            padding: 15px 25px;
+            font-size: 26px;
+            text-align: center;
+            text-decoration: none;
+            background-color: #ffcc00;
+            color: #ffffff;
+            border-radius: 7px;
+            margin: 20px;
+            box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+            transition: transform 0.3s ease-in-out;
+            position: relative;
+            overflow: hidden;
+            z-index: 1;
+        }
+
+        /* Анимация для кнопок */
+        .button:before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(255, 255, 255, 0.2);
+            transform: skewX(-30deg) translateX(-150%);
+            transition: transform 0.3s ease-in-out;
+            z-index: -1;
+        }
+
+        .button:hover {
+            transform: scale(1.1);
+        }
+
+        .button:hover:before {
+            transform: skewX(-30deg) translateX(0);
+        }
+
+        /* Стилизация скриншотов */
+        .screenshot {
+            display: block;
+            margin: 0 auto;
+            width: 400px;
+            border-radius: 5px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+            margin-top: 50px;
+            animation: fade-in 1s ease-in-out;
+        }
+
+        /* Анимация для скриншотов */
+        @keyframes fade-in {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+
+        /* Добавление фона */
+        body {
+            background-color: #111111;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+    </style>
+</head>
+<body>
+    <h1>Battle of the Stakes</h1>
+    <p>Hit the balls on the goal and shoot down various debris flying at you. Try not to miss the flying debris, knock it down with balls so that it does not fall down. Otherwise, the game will have to start over.</p>
+    <div>
+        <a class="button" href="mw.html">Privacy Policy</a>
+        <a class="button" href="hw.html">Terms & Conditions</a>
+        <a class="button" href="hg.html">Battle of the Stakes - Data Removal</a>
+    </div>
+    <img class="screenshot" src="3.png" alt="Скриншот 1">
+    <img class="screenshot" src="4.png" alt="Скриншот 2">
+    <img class="screenshot" src="5.png" alt="Скриншот 3">
+</body>
+</html>
